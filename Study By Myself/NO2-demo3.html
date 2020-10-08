@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>aside/section元素布局实例</title>
+    <style type="text/css">
+    body{
+        margin: 0%; height: 708px;
+    }
+header{
+    width: 100%;height: 10% ;background: green;
+}
+footer{
+    width: 100%;height: 10% ;background: lightcyan;
+}
+#div0{
+    width: 100%;height: 80% ;background:red
+}
+aside{
+    /* 这里的height设置不能够为100%，是相对于body而言的 */
+    width: 20%;height: 80% ;background:sandybrown;float: left;
+}
+section{
+    /* 这里的height设置不能够为100%，是相对于body而言的 */
+    width: 80%;height: 80% ;background: springgreen;float: left;
+}
+    </style>
+</head>
+<body>
+    <!-- 新的布局元素header/footer/article/aside/section等元素比div布局元素更简洁
+    <div id="div1">.....</div> -->
+        <header>header</header>
+        <aside>side</aside>
+        <section>section</section>
+    
+    <footer>footer </footer>
+</body>
+</html>
