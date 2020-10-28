@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>相对定位、绝对地位</title>
+    <style>
+        /* Position的属性值有：
+1.     Absolute：绝对定位，是相对于最近的且不是static定位的父元素来定位
+
+2.     Fixed：绝对定位，是相对于浏览器窗口来定位的，是固定的，不会跟屏幕一起滚动。
+
+3.     Relative：相对定位，是相对于其原本的位置来定位的。
+
+4.     Static：默认值，没有定位。
+
+5.     Inherit：继承父元素的position值。 */
+        .box1{
+            background-color: aqua;
+            height: 40px;
+        }
+        .box2{
+            background-color:antiquewhite;
+            height: 200px;
+            /* position: absolute;*/
+               /*应用了position: absolute的元素会循着节点树中的父（祖）元素来确定“根”，然后相对这个“根”元素来偏移。如果在其节点树中所有父（祖）元素都没有设置position属性值为relative或者absolute则该元素最终将对body进行位置偏移。*/
+               /*width: 200px;
+               left: 10px;
+               top: 50px; */
+               /* position: relative;
+               top: -50px; */
+               position: static;
+               left: 300px;
+        }
+        .box2_1{
+            background-color:darkkhaki;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            left: 30px;
+        }
+        .box2_2{
+            background-color: aquamarine;
+            width: 50px;
+            height: 50px;
+        }
+        .box3{
+            background-color:blue;
+            height: 40px;
+        }
+        .box4{
+            background-color:chartreuse;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">江西软件职业技术大学</div>
+    <div class="box2">软件工程学院</div>
+    <div class="box2_1">教师</div>
+    <div class="box2_2">学生</div>
+    <div class="box3">软件工程专业</div>
+    <div class="box4">软工9班</div>
+</body>
+</html>
