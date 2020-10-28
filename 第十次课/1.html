@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行内元素</title>
+    <style>
+        body{
+            background-color: chartreuse;
+        }
+        i{
+            background-color: blanchedalmond;
+        }
+        span{
+            background-color: aquamarine;
+        }
+        strong{
+            background-color: aqua;
+        }
+        /* 
+1)块级元素
+特点：
+1.总是从新的一行开始
+
+2.高度、宽度都是可控的
+
+3.宽度没有设置时，默认为100%
+
+4.块级元素中可以包含块级元素和行内元素
+
+5.块级文字元素中不能放入其他块级元素
+
+6.块级大多为结构性标记
+2)行内元素
+特点：
+1.和其他元素都在一行
+
+2.高度、宽度以及内边距都是不可控的
+
+3.宽高就是内容的高度，依靠自身字体大小和图形支撑结构的，不可以改变
+
+4.行内元素只能行内元素，不能包含块级元素
+
+5.行内元素的paddding可以设置
+
+6.margin只能够设置水平方向的边距，即：margin-left和margin-right，设置margin-top和margin-bottom无效
+
+7.块级大多为结构性标记
+常见行内标签:
+特点：
+1.和其他元素都在一行
+
+2.高度、宽度以及内边距都是不可控的
+
+3.宽高就是内容的高度，不可以改变
+
+4.行内元素只能行内元素，不能包含块级元素
+
+5.行内大多为描述性标记
+        行内元素不能设置宽和高 */
+        /* .class是类选择器，i{}是标签选择器 */
+        .box1,.box2,.box3{
+            width: 100px;
+            height: 100px;
+        }
+        .box1{
+            background-color: darkcyan;
+            /* display: inline; */
+            display:inline-block;
+        }
+        .box2{
+            background-color: cyan;
+            display: inline-block;
+        }
+        .box3{
+            background-color: darkorange;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <i>江西</i>
+    <span>软件</span>
+    <strong>大学</strong>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>
