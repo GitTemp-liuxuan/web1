@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绝对定位</title>
+    <style>
+        body{
+            background-color: chartreuse;
+        }
+        .wrapper{
+            background-color: blueviolet;
+            width: 800px;
+            height: 500px;
+            margin: 50px;
+            margin-left: 200px;
+             border: 1px  solid red;/*边框没有设置的情况下得设置一个边框 */
+            /* BFC 块级格式化上下文  清浮动*/
+            /*overflow: hidden;*/
+        }
+        .grandparents{
+            background-color: aquamarine;
+            width: 600px;
+            height: 400px;
+            margin: 20px;
+        }
+        .parent1{
+            background-color: blanchedalmond;
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            margin: 10px;
+            position: relative;
+        }
+        .parent2{
+            background-color: coral;
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            margin: 10px;
+        }
+        .son1{
+            background-color: black;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 10px;
+        }
+        .son2{
+            background-color:aliceblue;
+            width: 30px;
+            height: 30px;
+            position: relative;
+            top: 10px;
+        }
+        /* position:static absolute relative; */
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="grandparents">
+            <div class="parent1">
+                <div class="son1"></div>
+            </div>
+            <div class="parent2">
+                <div class="son2"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
