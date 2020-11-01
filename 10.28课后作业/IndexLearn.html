@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>块级元素认识</title>
+    <style>
+        .box{
+            background-color: aqua;
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 你是否分得清行内元素、块级元素和行内块级元素，
+        请尽可能多的罗列出行内元素和块级元素。
+        请用实际代码具体实现。提交到GitHub仓库里。 -->
+        <!-- 1、行内元素：
+        ​行内元素不可以设置宽（width）和高（height），
+        但可以与其他行内元素位于同一行，
+        行内元素内一般不可以包含块级元素。
+        行内元素的高度一般由元素内部的字体大小决定，宽度由内容的长度控制
+    eg: <b>,<a>,<br>,<i>,<img>,<input>,<sup>,<sub>
+    -->
+    <b>我是行内元素!!!</b><br>
+    <a href="https://baidu.com">百度一下吧</a>
+        <!-- 2、块级元素
+        每个块级元素独占一行
+        可以设置高、宽、行高、行距
+        元素宽度不设置的话默认为父类宽度（父类宽度为100%）
+    eg: <div>,<h1~6>,<dl>,<li>,<ol>,<ul>,<p>,<tbody>,<tfoot>,<thead>,<td>,<tr>,<th>
+    -->
+    <div class="box1" >
+            <h1>我是块级元素!!!</h1>
+            <table border="1">
+            <tr><th>标题</th><th>标题</th><th>标题</th><th>标题</th><th>标题</th></tr>
+		<tr><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td></tr>
+		<tr><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td></tr>
+		<tr><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td></tr>
+        <tr><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td></tr>
+    </table>
+    </div>
+        <!-- 3、行内块级元素 
+        行内块级元素，它既具有块级元素的特点，也有行内元素的特点，
+        它可以自由设置元素宽度和高度，
+        也可以在一行中放置多个行内块级元素。
+        比如input、img就是行内块级元素，它可以设置高宽以及一行多个。
+        -->
+        <img src="/i/eg_tulip.jpg"  alt="上海鲜花港 - 郁金香"  height="100px" width="100px"/>
+        <input type="radio" name="sex" value="1">男
+        <input type="radio" name="sex" value="0">女
+</body>
+</html>

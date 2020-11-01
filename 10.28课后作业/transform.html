@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>块级元素之间的转换</title>
+    <style>
+        div {
+            /* 转换为行元素 */
+            display:inline;
+            height: 200px;
+            width: 200px;
+            background-color: hotpink;
+        }
+        span {
+            /* 转换为块元素 */
+            display: block;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+         a {
+             /* 转换为行内块元素 */
+             display: inline-block;
+             width: 200px;
+             height: 200px;
+             background-color: orange;
+         }
+    </style>
+</head>
+<body>
+    <span>行内元素</span>
+    <span>行内元素</span>
+    <div>div 是块级元素</div>
+    <div>div 是块级元素</div>
+    <a href="#">百度</a>
+    <a href="#">新浪</a>
+</body>
+
+</html>
