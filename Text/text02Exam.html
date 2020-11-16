@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>布局</title>
+     <style>
+        .top{
+            width:1000px;
+            height:150px;
+            text-align: center;
+        }
+        .title{
+            background-color:darkorchid;
+            height:50px;
+            line-height: 50px;
+        }
+        .menuWrapper {
+             background-color:darkorchid;
+        }
+        .submenu {
+            display:inline-block;
+            background-color:darkorchid;
+            width:150px;
+            height:100px;
+            line-height: 100px;
+            text-align: center;
+            margin:0 20px;
+        }
+    </style> 
+</head>
+<body>
+    <div class="top">
+        <div class="title">江西软件职业技术大学</div>
+        <div class="menuWrapper">
+            <div class="submenu">学校概况</div>
+            <div class="submenu">新闻中心</div>
+            <div class="submenu">机构设置</div>
+            <div class="submenu">师资队伍</div>
+            <div class="submenu">联系我们</div>
+        </div>
+    </div>
+    <table border="1" style="width: 1000px; height: 450px;">
+        <tr>
+            <td style="background-color: darkorchid; width: 20%;">
+                <ul style="list-style-type: none;">
+                    <li>软件工程学院</li><br>
+                    <li>网络工程学院</li><br>
+                    <li>信息技术学院</li><br>
+                    <li>经济管理学院</li><br>
+                    <li>区块链学院</li><br>
+                    <li>VR与艺术学院</li><br>
+                    <li>新媒体学院</li><br>
+                    <li>国际学院</li><br>
+                    <li>创新学院</li><br>
+                    <li>继续教育学院</li><br>
+                </ul>
+            </td>
+            <td colspan="2" style="width: 80%; height: 100%; background-color: darkorchid;">
+                <table cellpadding="10"  cellspacing="10" style="width: 800px; height: 450px; background-color: darkorchid;" border="1">
+                   <tr><td style="height: 25%; text-align: center;"><h1>学院新闻</h1></td></tr>
+                   <tr><td style="height: 25%; text-align: center;"><h1>通知公告</h1></td></tr>
+                   <tr><td style="height: 25%; text-align: center;"><h1>教学资讯</h1></td></tr>
+                   <tr><td style="height: 25%; text-align: center;"><h1>学团工作</h1></td></tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table border="1" style="width: 1000px; height: 150px; background-color: darkorchid; text-align: left;">
+        <tr><th><h3>学校地址：江西省南昌市先锋创客小镇
+        <p>邮编：330041</p></h3></th></tr>
+    </table>
+</body>
+</html>
