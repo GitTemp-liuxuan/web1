@@ -1,0 +1,43 @@
+<!-- BFC 块级格式化上下文 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动</title>
+    <style>
+        #wrapper{
+            border: 5px solid green;
+            /* 让那个div发生一个变化，产生块级格式化上下文属性，与浮动一定相关，与外边距（高度）塌陷相关 */
+            /* overflow: hidden; */
+            position: absolute;
+        }
+        #right{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            float:left;
+        }
+        #middle{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            float: left;
+        }
+        #left{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            float: left;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="right"></div>
+        <div id="middle"></div>
+        <div id="left"></div>
+    </div>
+</body>
+</html>
