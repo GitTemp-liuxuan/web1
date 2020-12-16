@@ -5,6 +5,7 @@ function City(cityName,cityArea,cityPostcode,cityRegions){
     this.cityPostcode=cityPostcode;
     this.cityRegions=cityRegions;
 }
+//2
 let City={
     cityName="南昌市",
     cityArea=123,
@@ -13,6 +14,7 @@ let City={
 }
 let arr=["东湖区","西湖区","青山湖","新建区","湾里区"]
 
+//3
 // 函数原型对象
 City1.prototype = {
 	
