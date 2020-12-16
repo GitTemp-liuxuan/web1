@@ -1,8 +1,7 @@
-(function (x) { console.log("this is chestnut"); return ((x) => function () {
-    console.log("this is haw"); x.printName= function(){
-    console.log("this is x().printName"); return this.name
-    }
-    return 200 + x.printName() + x()
-    }())(() => { this.name=6666;console.log("this is pitaya"); return 3999 })
-    
-})
+function orange(){ console.log("this is orange")
+}
+orange.prototype= function (){ this.name = " 张 三 ", this.price= 20
+getPrice=function (){return 2000}()
+console.log("this is function" + getPrice)
+//this.getPrice= function (){return this.price}()
+}
